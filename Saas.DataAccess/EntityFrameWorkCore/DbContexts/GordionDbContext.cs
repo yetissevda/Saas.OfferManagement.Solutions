@@ -18,11 +18,11 @@ public class GordionDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         //Cahatay Pc
-        optionsBuilder.UseSqlServer(
-            @"Server=TRIST-LPF2RZWAY;Database=OfferManagement;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True").ConfigureWarnings(b => b.Ignore(RelationalEventId.AmbientTransactionWarning)); 
-        
+        //  optionsBuilder.UseSqlServer(
+        //@"Server=TRIST-LPF2RZWAY;Database=OfferManagement;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True").ConfigureWarnings(b => b.Ignore(RelationalEventId.AmbientTransactionWarning));
+
         //Sevda Pc
-        //optionsBuilder.UseSqlServer(@"Data Source=.\SQLEXPRESS;Initial Catalog=OfferManagement ;Integrated Security=true;MultipleActiveResultSets=true;TrustServerCertificate=True").ConfigureWarnings(b => b.Ignore(RelationalEventId.AmbientTransactionWarning)); ;
+        optionsBuilder.UseSqlServer(@"Data Source=.\SQLEXPRESS;Initial Catalog=OfferManagement ;Integrated Security=true;MultipleActiveResultSets=true;TrustServerCertificate=True").ConfigureWarnings(b => b.Ignore(RelationalEventId.AmbientTransactionWarning)); ;
 
     }
 

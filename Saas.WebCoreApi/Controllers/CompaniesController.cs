@@ -76,7 +76,6 @@ namespace Saas.WebCoreApi.Controllers
         /// </summary>
         /// <param name="company"></param>
         /// <returns></returns>
-
         [HttpPost("Add")]
         [MapToApiVersion("1.0")]
         [Authorize]
