@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BusinessAspects\Autofac\Redis\**" />
+    <EmbeddedResource Remove="BusinessAspects\Autofac\Redis\**" />
+    <None Remove="BusinessAspects\Autofac\Redis\**" />
+  </ItemGroup>
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="BusinessAspects\Autofac\IRedisCacheService.cs" />
+    <Compile Remove="BusinessAspects\Autofac\RedisCacheManager.cs" />
+    <Compile Remove="BusinessAspects\Autofac\RedisKeyForList.cs" />
+    <Compile Remove="BusinessAspects\Autofac\RedisOperation.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Saas.Core\Saas.Core.csproj" />
+    <ProjectReference Include="..\Saas.DataAccess\Saas.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

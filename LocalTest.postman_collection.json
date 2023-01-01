@@ -1,0 +1,2253 @@
+{
+	"info": {
+		"_postman_id": "7b71ee13-39e3-4983-bdb9-98ae6197102c",
+		"name": "LocalTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21129984"
+	},
+	"item": [
+		{
+			"name": "SaasOfferManagement",
+			"item": [
+				{
+					"name": "userBranches",
+					"item": [
+						{
+							"name": "create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyUserBranches/Add?CompanyUserId=55B9D925-5AB8-47AB-F944-08DAE2677E92&BranchId=7F728C85-D58B-4B11-CF39-08DAE268EE21&Description=adasd&DescriptionTwo=adasd&DescriptionThree=asdas&Deleted=false",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyUserBranches",
+										"Add"
+									],
+									"query": [
+										{
+											"key": "CompanyUserId",
+											"value": "55B9D925-5AB8-47AB-F944-08DAE2677E92"
+										},
+										{
+											"key": "BranchId",
+											"value": "7F728C85-D58B-4B11-CF39-08DAE268EE21"
+										},
+										{
+											"key": "Description",
+											"value": "adasd"
+										},
+										{
+											"key": "DescriptionTwo",
+											"value": "adasd"
+										},
+										{
+											"key": "DescriptionThree",
+											"value": "asdas"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getbyUserId",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyUserBranches/GetUserBranchWithUserId/55B9D925-5AB8-47AB-F944-08DAE2677E92",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyUserBranches",
+										"GetUserBranchWithUserId",
+										"55B9D925-5AB8-47AB-F944-08DAE2677E92"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetByBranchId",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyUserBranches/GetAsyncById/B987C440-4A95-4EB1-4C97-08DAE34B4522",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyUserBranches",
+										"GetAsyncById",
+										"B987C440-4A95-4EB1-4C97-08DAE34B4522"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyUserBranches/Update?ID=B987C440-4A95-4EB1-4C97-08DAE34B4522&CompanyUserId=55B9D925-5AB8-47AB-F944-08DAE2677E92&BranchId=7F728C85-D58B-4B11-CF39-08DAE268EE21&Description=UpdateDeneme22&DescriptionTwo=DahaInceInsertAldim&Deleted=false",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyUserBranches",
+										"Update"
+									],
+									"query": [
+										{
+											"key": "ID",
+											"value": "B987C440-4A95-4EB1-4C97-08DAE34B4522"
+										},
+										{
+											"key": "CompanyUserId",
+											"value": "55B9D925-5AB8-47AB-F944-08DAE2677E92"
+										},
+										{
+											"key": "BranchId",
+											"value": "7F728C85-D58B-4B11-CF39-08DAE268EE21"
+										},
+										{
+											"key": "Description",
+											"value": "UpdateDeneme22"
+										},
+										{
+											"key": "DescriptionTwo",
+											"value": "DahaInceInsertAldim"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyUserBranches/Delete?ID=B987C440-4A95-4EB1-4C97-08DAE34B4522",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyUserBranches",
+										"Delete"
+									],
+									"query": [
+										{
+											"key": "ID",
+											"value": "B987C440-4A95-4EB1-4C97-08DAE34B4522"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Add User To Company",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/Auth/Register?CompanyId=818AAAAC-BA10-4BA5-976A-08DAE26692BD&Password=kutukola&SysAdmin=true&BranchAdmin=false&Deleted=false&UserBranchesList=FFED7939-8D35-4767-F5C4-08DAE269E8F1&Email=baris%40dfds.com&FullName=Baris&Adress=Kagithane&IsStudent=false",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"Auth",
+										"Register"
+									],
+									"query": [
+										{
+											"key": "CompanyId",
+											"value": "818AAAAC-BA10-4BA5-976A-08DAE26692BD"
+										},
+										{
+											"key": "Password",
+											"value": "kutukola"
+										},
+										{
+											"key": "SysAdmin",
+											"value": "true"
+										},
+										{
+											"key": "BranchAdmin",
+											"value": "false"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										},
+										{
+											"key": "UserBranchesList",
+											"value": "FFED7939-8D35-4767-F5C4-08DAE269E8F1"
+										},
+										{
+											"key": "Email",
+											"value": "baris%40dfds.com"
+										},
+										{
+											"key": "FullName",
+											"value": "Baris"
+										},
+										{
+											"key": "Adress",
+											"value": "Kagithane"
+										},
+										{
+											"key": "IsStudent",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateUserAndCompanyTogetherFirstLoginAttempth",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/Auth/CompanyFirstRegister?Email=baristut2akli2223%40dfds.com&Password=kutukola&FullName=adasdas&CompanyName=asdasdasd&TaxNumber=15383216949&IsStudent=false&SysAdmin=false&BranchAdmin=false&Deleted=false",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"Auth",
+										"CompanyFirstRegister"
+									],
+									"query": [
+										{
+											"key": "Email",
+											"value": "baristut2akli2223%40dfds.com"
+										},
+										{
+											"key": "Password",
+											"value": "kutukola"
+										},
+										{
+											"key": "FullName",
+											"value": "adasdas"
+										},
+										{
+											"key": "CompanyName",
+											"value": "asdasdasd"
+										},
+										{
+											"key": "TaxNumber",
+											"value": "15383216949"
+										},
+										{
+											"key": "IsStudent",
+											"value": "false"
+										},
+										{
+											"key": "SysAdmin",
+											"value": "false"
+										},
+										{
+											"key": "BranchAdmin",
+											"value": "false"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);\r",
+											"pm.collectionVariables.set(\"token\", jsonData.token);\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/Auth/login?Email=ahaozde%40dfds.com&Password=kutukola",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"Auth",
+										"login"
+									],
+									"query": [
+										{
+											"key": "Email",
+											"value": "ahaozde%40dfds.com"
+										},
+										{
+											"key": "Password",
+											"value": "kutukola"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Company",
+					"item": [
+						{
+							"name": "GetlistCompany",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/Companies/GetList",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"Companies",
+										"GetList"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CompanyBranch",
+					"item": [
+						{
+							"name": "AddCompanyBranch",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyBranches/Add?CompanyId=818AAAAC-BA10-4BA5-976A-08DAE26692BD&FullName=cahataySube&Description=deneme%20desc&DescriptionTwo=deneme%20desc2&DescriptionThree=deneme%20desc2&Deleted=false",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyBranches",
+										"Add"
+									],
+									"query": [
+										{
+											"key": "CompanyId",
+											"value": "818AAAAC-BA10-4BA5-976A-08DAE26692BD"
+										},
+										{
+											"key": "FullName",
+											"value": "cahataySube"
+										},
+										{
+											"key": "Description",
+											"value": "deneme%20desc"
+										},
+										{
+											"key": "DescriptionTwo",
+											"value": "deneme%20desc2"
+										},
+										{
+											"key": "DescriptionThree",
+											"value": "deneme%20desc2"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetL'stBranch",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyBranches/GetList",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyBranches",
+										"GetList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetBranchById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyBranches/GetById/7F728C85-D58B-4B11-CF39-08DAE268EE21",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyBranches",
+										"GetById",
+										"7F728C85-D58B-4B11-CF39-08DAE268EE21"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "branchDelete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyBranches/Delete/7F728C85-D58B-4B11-CF39-08DAE268EE21",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyBranches",
+										"Delete",
+										"7F728C85-D58B-4B11-CF39-08DAE268EE21"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "operationClaim",
+					"item": [
+						{
+							"name": "Add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/CompanyOperationClaim/Add?Name=AdminRole&Description=Sadece%20Admin%20rolleri1&DescriptionTwo=Sadece%20Admin%20rolleri2&DescriptionThree=Sadece%20Admin%20rolleri3&Deleted=false&CreatedBy=Admin",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"CompanyOperationClaim",
+										"Add"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "AdminRole"
+										},
+										{
+											"key": "Description",
+											"value": "Sadece%20Admin%20rolleri1"
+										},
+										{
+											"key": "DescriptionTwo",
+											"value": "Sadece%20Admin%20rolleri2"
+										},
+										{
+											"key": "DescriptionThree",
+											"value": "Sadece%20Admin%20rolleri3"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										},
+										{
+											"key": "CreatedBy",
+											"value": "Admin"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/CompanyOperationClaim/Update?Name=AdminRole%20Update&ID=CDCCCDF2-6EBD-497D-0081-08DAE3FAA215&Description=Sadece%20Admin%20rolleri1%20upd&DescriptionTwo=Sadece%20Admin%20rolleri2%20upd&DescriptionThree=Sadece%20Admin%20roller3%20upd&Deleted=false",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"CompanyOperationClaim",
+										"Update"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "AdminRole%20Update"
+										},
+										{
+											"key": "ID",
+											"value": "CDCCCDF2-6EBD-497D-0081-08DAE3FAA215"
+										},
+										{
+											"key": "Description",
+											"value": "Sadece%20Admin%20rolleri1%20upd"
+										},
+										{
+											"key": "DescriptionTwo",
+											"value": "Sadece%20Admin%20rolleri2%20upd"
+										},
+										{
+											"key": "DescriptionThree",
+											"value": "Sadece%20Admin%20roller3%20upd"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "GetById/{roleId:Guid}",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/CompanyOperationClaim/GetById/CDCCCDF2-6EBD-497D-0081-08DAE3FAA215",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"CompanyOperationClaim",
+										"GetById",
+										"CDCCCDF2-6EBD-497D-0081-08DAE3FAA215"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetList",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/CompanyOperationClaim/GetList",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"CompanyOperationClaim",
+										"GetList"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CompanyUser",
+					"item": [
+						{
+							"name": "Add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyUser/Add?CompanyId=818AAAAC-BA10-4BA5-976A-08DAE26692BD&UserBranchesList=7F728C85-D58B-4B11-CF39-08DAE268EE21&UserBranchesList=FFED7939-8D35-4767-F5C4-08DAE269E8F1&Email=glorycox%40gmail.com&Password=kutukola&FullName=glory%20for%20everyone&CompanyName=ahmet%20aslan&IsStudent=false&SysAdmin=false&BranchAdmin=false&Deleted=false",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyUser",
+										"Add"
+									],
+									"query": [
+										{
+											"key": "CompanyId",
+											"value": "818AAAAC-BA10-4BA5-976A-08DAE26692BD"
+										},
+										{
+											"key": "UserBranchesList",
+											"value": "7F728C85-D58B-4B11-CF39-08DAE268EE21"
+										},
+										{
+											"key": "UserBranchesList",
+											"value": "FFED7939-8D35-4767-F5C4-08DAE269E8F1"
+										},
+										{
+											"key": "Email",
+											"value": "glorycox%40gmail.com"
+										},
+										{
+											"key": "Password",
+											"value": "kutukola"
+										},
+										{
+											"key": "FullName",
+											"value": "glory%20for%20everyone"
+										},
+										{
+											"key": "CompanyName",
+											"value": "ahmet%20aslan"
+										},
+										{
+											"key": "IsStudent",
+											"value": "false"
+										},
+										{
+											"key": "SysAdmin",
+											"value": "false"
+										},
+										{
+											"key": "BranchAdmin",
+											"value": "false"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/CompanyUser/Update?UserId=90CF5283-BF92-47C2-09AB-08DAE41E9BE0&CompanyId=818AAAAC-BA10-4BA5-976A-08DAE26692BD&UserBranchesList=7C8D70E7-77D8-4773-6C53-08DAE41FDC30&Email=ahaozderusus%40gmail.com&Password=kutukola&FullName=denemeUpdate&Adress=test&IsStudent=true&SysAdmin=false&BranchAdmin=false&Deleted=false",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"CompanyUser",
+										"Update"
+									],
+									"query": [
+										{
+											"key": "UserId",
+											"value": "90CF5283-BF92-47C2-09AB-08DAE41E9BE0"
+										},
+										{
+											"key": "CompanyId",
+											"value": "818AAAAC-BA10-4BA5-976A-08DAE26692BD"
+										},
+										{
+											"key": "UserBranchesList",
+											"value": "7C8D70E7-77D8-4773-6C53-08DAE41FDC30"
+										},
+										{
+											"key": "Email",
+											"value": "ahaozderusus%40gmail.com"
+										},
+										{
+											"key": "Password",
+											"value": "kutukola"
+										},
+										{
+											"key": "FullName",
+											"value": "denemeUpdate"
+										},
+										{
+											"key": "Adress",
+											"value": "test"
+										},
+										{
+											"key": "IsStudent",
+											"value": "true"
+										},
+										{
+											"key": "SysAdmin",
+											"value": "false"
+										},
+										{
+											"key": "BranchAdmin",
+											"value": "false"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/CompanyUser/Delete?Id=7371EB1B-8B89-4E6E-F946-08DAE2677E92",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"CompanyUser",
+										"Delete"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "7371EB1B-8B89-4E6E-F946-08DAE2677E92"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/CompanyUser/GetById/55B9D925-5AB8-47AB-F944-08DAE2677E92",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"CompanyUser",
+										"GetById",
+										"55B9D925-5AB8-47AB-F944-08DAE2677E92"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetList",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/CompanyUser/GetList",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"CompanyUser",
+										"GetList"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CompanyProduct",
+					"item": [
+						{
+							"name": "Add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProduct/AddAsync?ProductName=Kalem22cik&ProductShortName=Ka2lc&Barcode=129333333424&CompanyId=818aaaac-ba10-4ba5-976a-08dae26692bd",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProduct",
+										"AddAsync"
+									],
+									"query": [
+										{
+											"key": "ProductName",
+											"value": "Kalem22cik"
+										},
+										{
+											"key": "ProductShortName",
+											"value": "Ka2lc"
+										},
+										{
+											"key": "Barcode",
+											"value": "129333333424"
+										},
+										{
+											"key": "CompanyId",
+											"value": "818aaaac-ba10-4ba5-976a-08dae26692bd"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProduct/UpdateAsync?ID=AF9E9E38-DF54-4E22-D96D-08DAE4B6E7AD&ProductName=Yeni%C3%9Cr%C3%BCn&ProductShortName=Ye%C3%9Cr&Barcode=888111999223344&CompanyId=818AAAAC-BA10-4BA5-976A-08DAE26692BD",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProduct",
+										"UpdateAsync"
+									],
+									"query": [
+										{
+											"key": "ID",
+											"value": "AF9E9E38-DF54-4E22-D96D-08DAE4B6E7AD"
+										},
+										{
+											"key": "ProductName",
+											"value": "Yeni%C3%9Cr%C3%BCn"
+										},
+										{
+											"key": "ProductShortName",
+											"value": "Ye%C3%9Cr"
+										},
+										{
+											"key": "Barcode",
+											"value": "888111999223344"
+										},
+										{
+											"key": "CompanyId",
+											"value": "818AAAAC-BA10-4BA5-976A-08DAE26692BD"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProduct/Delete?Id=AF9E9E38-DF54-4E22-D96D-08DAE4B6E7AD",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProduct",
+										"Delete"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "AF9E9E38-DF54-4E22-D96D-08DAE4B6E7AD"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProduct/GetById/AF9E9E38-DF54-4E22-D96D-08DAE4B6E7AD",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProduct",
+										"GetById",
+										"AF9E9E38-DF54-4E22-D96D-08DAE4B6E7AD"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetList",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost}}/CompanyProduct/GetListAsync",
+									"host": [
+										"{{localhost}}"
+									],
+									"path": [
+										"CompanyProduct",
+										"GetListAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CompanyProductUnit",
+					"item": [
+						{
+							"name": "Add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProductUnit/AddAsync?UnitName=Kilogram&UnitShortName=KG&Calculate=1000&CalculateCost=1&CompanyId=818AAAAC-BA10-4BA5-976A-08DAE26692BD&Description=asdasd&DescriptionTwo=asdas&DescriptionThree=adsa&Deleted=false",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProductUnit",
+										"AddAsync"
+									],
+									"query": [
+										{
+											"key": "UnitName",
+											"value": "Kilogram"
+										},
+										{
+											"key": "UnitShortName",
+											"value": "KG"
+										},
+										{
+											"key": "Calculate",
+											"value": "1000"
+										},
+										{
+											"key": "CalculateCost",
+											"value": "1"
+										},
+										{
+											"key": "CompanyId",
+											"value": "818AAAAC-BA10-4BA5-976A-08DAE26692BD"
+										},
+										{
+											"key": "Description",
+											"value": "asdasd"
+										},
+										{
+											"key": "DescriptionTwo",
+											"value": "asdas"
+										},
+										{
+											"key": "DescriptionThree",
+											"value": "adsa"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProductUnit/UpdateAsync?ID=6CF547A1-D180-4FD9-625A-08DAE4BE7985&UnitName=KiloToGram&UnitShortName=KgToGr&Calculate=1000&CalculateCost=1&CompanyId=818AAAAC-BA10-4BA5-976A-08DAE26692BD&Description=12&DescriptionTwo=34&DescriptionThree=566&Deleted=false",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProductUnit",
+										"UpdateAsync"
+									],
+									"query": [
+										{
+											"key": "ID",
+											"value": "6CF547A1-D180-4FD9-625A-08DAE4BE7985"
+										},
+										{
+											"key": "UnitName",
+											"value": "KiloToGram"
+										},
+										{
+											"key": "UnitShortName",
+											"value": "KgToGr"
+										},
+										{
+											"key": "Calculate",
+											"value": "1000"
+										},
+										{
+											"key": "CalculateCost",
+											"value": "1"
+										},
+										{
+											"key": "CompanyId",
+											"value": "818AAAAC-BA10-4BA5-976A-08DAE26692BD"
+										},
+										{
+											"key": "Description",
+											"value": "12"
+										},
+										{
+											"key": "DescriptionTwo",
+											"value": "34"
+										},
+										{
+											"key": "DescriptionThree",
+											"value": "566"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProductUnit/Delete?Id=6CF547A1-D180-4FD9-625A-08DAE4BE7985",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProductUnit",
+										"Delete"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "6CF547A1-D180-4FD9-625A-08DAE4BE7985"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProductUnit/GetByIdAsync/6CF547A1-D180-4FD9-625A-08DAE4BE7985",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProductUnit",
+										"GetByIdAsync",
+										"6CF547A1-D180-4FD9-625A-08DAE4BE7985"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetList",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProductUnit/GetListAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProductUnit",
+										"GetListAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "UserClaim",
+					"item": [
+						{
+							"name": "Add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProductUnit/AddAsync?UnitName=Kilogram&UnitShortName=KG&Calculate=1000&CalculateCost=1&CompanyId=818AAAAC-BA10-4BA5-976A-08DAE26692BD&Description=asdasd&DescriptionTwo=asdas&DescriptionThree=adsa&Deleted=false",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProductUnit",
+										"AddAsync"
+									],
+									"query": [
+										{
+											"key": "UnitName",
+											"value": "Kilogram"
+										},
+										{
+											"key": "UnitShortName",
+											"value": "KG"
+										},
+										{
+											"key": "Calculate",
+											"value": "1000"
+										},
+										{
+											"key": "CalculateCost",
+											"value": "1"
+										},
+										{
+											"key": "CompanyId",
+											"value": "818AAAAC-BA10-4BA5-976A-08DAE26692BD"
+										},
+										{
+											"key": "Description",
+											"value": "asdasd"
+										},
+										{
+											"key": "DescriptionTwo",
+											"value": "asdas"
+										},
+										{
+											"key": "DescriptionThree",
+											"value": "adsa"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProductUnit/UpdateAsync?ID=6CF547A1-D180-4FD9-625A-08DAE4BE7985&UnitName=KiloToGram&UnitShortName=KgToGr&Calculate=1000&CalculateCost=1&CompanyId=818AAAAC-BA10-4BA5-976A-08DAE26692BD&Description=12&DescriptionTwo=34&DescriptionThree=566&Deleted=false",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProductUnit",
+										"UpdateAsync"
+									],
+									"query": [
+										{
+											"key": "ID",
+											"value": "6CF547A1-D180-4FD9-625A-08DAE4BE7985"
+										},
+										{
+											"key": "UnitName",
+											"value": "KiloToGram"
+										},
+										{
+											"key": "UnitShortName",
+											"value": "KgToGr"
+										},
+										{
+											"key": "Calculate",
+											"value": "1000"
+										},
+										{
+											"key": "CalculateCost",
+											"value": "1"
+										},
+										{
+											"key": "CompanyId",
+											"value": "818AAAAC-BA10-4BA5-976A-08DAE26692BD"
+										},
+										{
+											"key": "Description",
+											"value": "12"
+										},
+										{
+											"key": "DescriptionTwo",
+											"value": "34"
+										},
+										{
+											"key": "DescriptionThree",
+											"value": "566"
+										},
+										{
+											"key": "Deleted",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProductUnit/Delete?Id=6CF547A1-D180-4FD9-625A-08DAE4BE7985",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProductUnit",
+										"Delete"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "6CF547A1-D180-4FD9-625A-08DAE4BE7985"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProductUnit/GetByIdAsync/6CF547A1-D180-4FD9-625A-08DAE4BE7985",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProductUnit",
+										"GetByIdAsync",
+										"6CF547A1-D180-4FD9-625A-08DAE4BE7985"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetList",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyProductUnit/GetListAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyProductUnit",
+										"GetListAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Offer",
+					"item": [
+						{
+							"name": "AddAsync",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"header\": {\r\n    \"branchId\": \"7F728C85-D58B-4B11-CF39-08DAE268EE21\",\r\n    \"companyId\": \"818AAAAC-BA10-4BA5-976A-08DAE26692BD\",\r\n    \"description\": \"test3Satır\",\r\n    \"descriptionTwo\": \"ff\",\r\n    \"descriptionThree\": \"rt\",\r\n    \"deleted\": false\r\n  },\r\n  \"rows\": [\r\n    {\r\n  \"companyProductId\": \"8AF751DB-893E-4F01-3830-08DAE4B65F8F\",\r\n  \"companyProductUnitId\": \"6CF547A1-D180-4FD9-625A-08DAE4BE7985\",\r\n  \"amount\": 3,\r\n  \"description\": \"test\",\r\n  \"descriptionTwo\": \"test\",\r\n  \"descriptionThree\": \"test\",\r\n  \"deleted\": false\r\n    },\r\n    {\r\n  \"companyProductId\": \"8AF751DB-893E-4F01-3830-08DAE4B65F8F\",\r\n  \"companyProductUnitId\": \"6CF547A1-D180-4FD9-625A-08DAE4BE7985\",\r\n  \"amount\": 4,\r\n  \"description\": \"test\",\r\n  \"descriptionTwo\": \"test\",\r\n  \"descriptionThree\": \"test\",\r\n  \"deleted\": false\r\n    },\r\n    {\r\n  \"companyProductId\": \"8AF751DB-893E-4F01-3830-08DAE4B65F8F\",\r\n  \"companyProductUnitId\": \"6CF547A1-D180-4FD9-625A-08DAE4BE7985\",\r\n  \"amount\": 5,\r\n  \"description\": \"test\",\r\n  \"descriptionTwo\": \"test\",\r\n  \"descriptionThree\": \"test\",\r\n  \"deleted\": false\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyOffer/AddAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyOffer",
+										"AddAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Only Header Approve",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyOffer/ApproveAsync?HeaderId=41D9EBE5-A818-4F25-B164-08DAE4E12817&approve=2",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyOffer",
+										"ApproveAsync"
+									],
+									"query": [
+										{
+											"key": "HeaderId",
+											"value": "41D9EBE5-A818-4F25-B164-08DAE4E12817"
+										},
+										{
+											"key": "approve",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"header\": {\r\n    \"branchId\": \"7F728C85-D58B-4B11-CF39-08DAE268EE21\",\r\n    \"companyId\": \"818AAAAC-BA10-4BA5-976A-08DAE26692BD\",\r\n    \"description\": \"test3Satır\",\r\n    \"descriptionTwo\": \"ff\",\r\n    \"descriptionThree\": \"rt\",\r\n    \"deleted\": false,\r\n    \"ID\": \"3866501A-7204-489F-507D-08DAE4ED388F\"\r\n  },\r\n  \"rows\": [\r\n    {\r\n        \"ID\": \"C0E3D36A-6005-4D47-C0E0-08DAE4ED389F\",\r\n  \"companyProductId\": \"8AF751DB-893E-4F01-3830-08DAE4B65F8F\",\r\n  \"companyProductUnitId\": \"6CF547A1-D180-4FD9-625A-08DAE4BE7985\",\r\n  \"amount\": 105,\r\n  \"description\": \"test\",\r\n  \"descriptionTwo\": \"test\",\r\n  \"descriptionThree\": \"test\",\r\n  \"deleted\": true\r\n    }\r\n   \r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyOffer/UpdateAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyOffer",
+										"UpdateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyOffer/DeleteAsync?Id=41d9ebe5-a818-4f25-b164-08dae4e12817",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyOffer",
+										"DeleteAsync"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "41d9ebe5-a818-4f25-b164-08dae4e12817"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyOffer/GetByIdAsync/41d9ebe5-a818-4f25-b164-08dae4e12817",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyOffer",
+										"GetByIdAsync",
+										"41d9ebe5-a818-4f25-b164-08dae4e12817"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetList",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7083/api/v1/CompanyOffer/GetListAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7083",
+									"path": [
+										"api",
+										"v1",
+										"CompanyOffer",
+										"GetListAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.collectionVariables.set(\"token\", jsonData.token);\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7083/api/v1/Auth/login?Email=ahaozde%40dfds.com&Password=kutukola",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7083",
+							"path": [
+								"api",
+								"v1",
+								"Auth",
+								"login"
+							],
+							"query": [
+								{
+									"key": "Email",
+									"value": "ahaozde%40dfds.com"
+								},
+								{
+									"key": "Password",
+									"value": "kutukola"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJraWQiOiJKbGFhU0xXRGVHN296aGNYYlBtZTdLdU5JbHhuZ2tnN1NFOENXMElvY3dFIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULkpIdVpsbWptNWRmazFFb1FoZWxOakdITDBMUGN1UmMzZ0V0Wm03SlFVZ28iLCJpc3MiOiJodHRwczovL2Rldi1hY2NvdW50cy5kZmRzLmNvbS9vYXV0aDIvYXVzZjJhdmRkbUVKTUd1cXEweDYiLCJhdWQiOiJhcGk6Ly9DdXN0b21lci1JQU0iLCJpYXQiOjE2NjUwNDgyNDUsImV4cCI6MTY2NTA1MTg0NSwiY2lkIjoiMG9hZjFxcHExUEhoTElnZmUweDYiLCJ1aWQiOiIwMHU0NWVzYnAxMVRVdU53YjB4NyIsInNjcCI6WyJDdXN0b21lci1JQU0uVXNlcnMuTWFuYWdlIl0sImF1dGhfdGltZSI6MTY2NTA0ODI0NCwic3ViIjoiYWhhb3pkZUBkZmRzLmNvbSIsImRmZHNVc2VySWQiOiJiY2M5ZDE2Ny04OGMwLTRiMDItOWFhNi0yMDg0ZTQzYWFmYmIifQ.YfLAaeGwLEkM4bcbug0GVnR1VLVskhh225nJR4GDEcbU96dcj4G3T7y5KBl0ibV5TOjHzwtKx9cpGSDtAFrQP6Re9HU5nY89iVfN2S8uojpMAykgE_gdAs4F6Bs3C-uXwKaaNTnlU-47qM4emhkmeAGvsGXo4EHYPyaQibXjv30Y6EkVmFvfk1cWmnik15o6-yY0HLhhOSRjoc_RVi3kW4iE-eNK8HcV57zKLFbbfgD4jBmj2tHnwS3zMeWQZFWMfaYDsuAu8PfClxu7S12Gmo4MKIE1B5-th-QANQHNeKeLKxr_jVVZRMA0J6j7-9FaOKaDLWypl7VyoL_QNOBIGw",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjU1YjlkOTI1LTVhYjgtNDdhYi1mOTQ0LTA4ZGFlMjY3N2U5MiIsImVtYWlsIjoiYWhhb3pkZUBkZmRzLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJjYWhhdGF5IiwibmJmIjoxNjcxNjk4NzExLCJleHAiOjE2NzE3Mjg3MTEsImlzcyI6Ind3dy5jYWhhdGF5LmNvbSIsImF1ZCI6Ind3dy5jYWhhdGF5LmNvbSJ9.feMt7wlFLBFP4LrtryYg7bnVgwkiTr3Z1SS3JM9pGPuyp6uI0w8v20aTl7zO_62h",
+			"type": "string"
+		},
+		{
+			"key": "localhost",
+			"value": "https://localhost:7083/api/v1",
+			"type": "string"
+		}
+	]
+}
