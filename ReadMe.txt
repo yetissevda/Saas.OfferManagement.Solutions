@@ -16,7 +16,7 @@ so u can use the same token in every endpoint which needs authrozitaoin)
 
 
 
-tests are not written yet.
+tests are not written yet..
 
 
 in this project ,
