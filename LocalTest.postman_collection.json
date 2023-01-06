@@ -576,7 +576,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://localhost:7083/api/v1/CompanyBranches/Add?CompanyId=818AAAAC-BA10-4BA5-976A-08DAE26692BD&FullName=cahataySube&Description=deneme%20desc&DescriptionTwo=deneme%20desc2&DescriptionThree=deneme%20desc2&Deleted=false",
+									"raw": "https://localhost:7083/api/v1/CompanyBranches/Add?CompanyId=818AAAAC-BA10-4BA5-976A-08DAE26692BD&FullName=SevdaSube&Description=deneme%20desc&DescriptionTwo=deneme%20desc2&DescriptionThree=deneme%20desc2&Deleted=false",
 									"protocol": "https",
 									"host": [
 										"localhost"
@@ -595,7 +595,7 @@
 										},
 										{
 											"key": "FullName",
-											"value": "cahataySube"
+											"value": "sevdaSube"
 										},
 										{
 											"key": "Description",
